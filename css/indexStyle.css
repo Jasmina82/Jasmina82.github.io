@@ -1,0 +1,402 @@
+body {
+	height: 100%;
+	width: 100%;
+	color: white;
+	margin: 0;
+	min-width: 320px;
+	font-family: Arial,
+	Helvetica,
+	sans-serif;
+	background-color: white;
+
+
+}
+
+/* navigation bar*/
+
+nav {
+	width: 100%;
+	background: #333333;
+	color: white;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -1px;
+	z-index: 3;
+	margin: 0;
+
+}
+
+ul.links {
+	margin: 0 auto;
+	text-align: right;
+	width: 95%;
+	padding: 0;
+
+}
+
+ul.links li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+
+}
+
+nav a:hover {
+	color: greenyellow;
+	text-decoration: none;
+}
+
+
+nav a {
+	color: white;
+}
+
+/* responsive navigation bar */
+
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #333333;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+/*  first page */
+
+#home {
+	background-image: url(../pics/vave.jpg);
+	background-size: 100% 100%;
+
+}
+
+.represent {
+
+	font-size: 20px;
+	margin: 0;
+	padding-top: 3%;
+
+}
+
+.represent h1 {
+	margin-bottom: 50px;
+	font-size: 65px;
+	font-weight: 700;
+}
+
+.skills {
+	text-align: center;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 13%;
+}
+
+.skills img {
+	height: 90px;
+	widows: 90px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-thumbnail {
+	margin: 25px;
+	padding: 0;
+}
+
+/* second page */
+
+#portfolio {
+
+	color: black;
+	background-color: white;
+}
+
+.slides {
+
+	padding: 5px;
+	color: black;
+
+
+}
+
+.slides .row {
+
+	border-bottom-style: groove;
+	padding: 100px 5px 100px 5px;
+	background-color: ghostwhite;
+
+}
+
+.slides img {
+	height: 250px;
+	widows: 259px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slides .row:first-child {
+	text-align: center;
+
+}
+
+#portfolio .container .col-sm-6 {
+
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#portfolio .container .col-sm-6 p {
+
+	margin: 15px;
+	margin-top: 15%;
+}
+
+.slides .col-sm-6 li {
+	text-align: center;
+	color: black;
+	display: inline;
+	background-color: whitesmoke;
+	font-size: 15px;
+	padding: 4px;
+	margin: 2%;
+	border-radius: 5px;
+}
+
+#portfolio .container h2 {
+
+	font-size: 35px;
+
+}
+
+/* third page */
+
+#contact {
+
+	background-color: white;
+	color: black;
+	font-family: Consolas, 'Lucida Console', 'Bitstream VeraSans Mono', 'DejaVu Sans Mono', monospace;
+
+}
+
+#contact .container {
+	text-align: center;
+	padding: 80px 2px 10px 2px;
+
+}
+
+#contact .container h2 {
+	margin-bottom: 50px;
+}
+
+#contact .container .row {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+
+}
+
+.col-sm-8 {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.col-sm-3 {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.visit {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.visit a {
+	font-family: 'Courier New', Courier, Freemono, 'Nimbus Mono L', monospace;
+	text-decoration: none;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px;
+}
+
+@media screen and (max-width:1040px) {
+
+	.skills {
+		margin: 10px;
+
+	}
+	.skills img {
+		height: 50px;
+		widows: 50px;
+
+	}
+	.img-thumbnail {
+		margin: 10px;
+
+	}
+
+}
+
+@media screen and (max-width:768px) {
+	body {
+		font-size: 20px;
+	}
+	.toggle {
+		display: block;
+		background: none;
+	}
+
+	ul.links {
+		width: 100%;
+		display: none;
+		text-align: left;
+		padding-left: 5px;
+
+	}
+	ul.links li {
+		display: block;
+		padding: 5px;
+
+	}
+	ul.active {
+		display: block;
+	}
+
+	.represent {
+
+		font-size: 25px;
+		margin: 0;
+		padding-top: 20px;
+	}
+
+	.represent h1 {
+		margin-bottom: 30px;
+		font-size: 35px;
+		font-weight: 700;
+	}
+
+	.skills img {
+		height: 40px;
+		widows: 40px;
+
+	}
+
+
+	.slides h1 {
+		font-size: 30px;
+
+	}
+	.slides p {
+		font-size: 15px;
+
+	}
+	.slides .row {
+		border-bottom-style: none;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.slides .row .col-sm-6 {
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.slides .col-sm-6 p {
+		margin-top: 0;
+	}
+
+	.slides .row .col-sm-6 ul {
+
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+
+	#contact .container {
+		text-align: center;
+		padding: 5;
+
+
+	}
+
+	#contact .container h2 {
+		margin-bottom: 15px;
+
+	}
+	.col-sm-8 {
+
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.info {
+		font-size: 15px;
+	}
+
+	.col-sm-3 {
+		margin-top 5px;
+		padding: 5px;
+	}
+
+
+}
+
+@media screen and (max-width:533px) {
+
+	.skills {
+		margin: 0;
+
+	}
+	.skills img {
+		height: 30px;
+		widows: 20px;
+
+	}
+
+	.img-thumbnail {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@media screen and (max-width:417px) {
+
+	.skills img {
+		height: 30px;
+		widows: 25px;
+
+	}
+
+}
+
+@media screen and (max-width:343px) {
+
+	.skills img {
+		height: 25px;
+		widows: 25px;
+
+	}
+	.represent p {
+		font-size: 20px;
+	}
+
+}
