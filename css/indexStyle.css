@@ -102,7 +102,7 @@ nav a {
 	margin-right: auto;
 }
 
-.img-thumbnail {
+.skills .img-thumbnail {
 	margin: 25px;
 	padding: 0;
 }
@@ -126,15 +126,14 @@ nav a {
 .slides .row {
 
 	border-bottom-style: groove;
-	padding: 100px 5px 100px 5px;
+	padding: 80px 5px 100px 5px;
 	background-color: ghostwhite;
 
 }
 
 .slides img {
-	height: 250px;
-	widows: 259px;
-	display: block;
+	height: 300px;
+	widows: 400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -153,12 +152,11 @@ nav a {
 }
 
 #portfolio .container .col-sm-6 p {
-
-	margin: 15px;
-	margin-top: 15%;
+	text-align: left;
+	margin-top: 10%;
 }
 
-.slides .col-sm-6 li {
+.slides .tehnologies li {
 	text-align: center;
 	color: black;
 	display: inline;
@@ -169,9 +167,28 @@ nav a {
 	border-radius: 5px;
 }
 
+.tehnologies ul {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: black;
+	display: inline;
+	font-size: 15px;
+	padding: 4px;
+	margin: 2%;
+	border-radius: 5px;
+}
+
+.tehnologies ul li:first-child {
+
+	color: #59b300;
+
+}
+
 #portfolio .container h2 {
 
 	font-size: 35px;
+
 
 }
 
@@ -186,13 +203,14 @@ nav a {
 }
 
 #contact .container {
-	text-align: center;
+	text-align: left;
 	padding: 80px 2px 10px 2px;
 
 }
 
 #contact .container h2 {
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 #contact .container .row {
@@ -216,6 +234,10 @@ nav a {
 	padding-top: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.info {
+	text-align: center;
 }
 
 .visit {
@@ -243,7 +265,7 @@ nav a {
 		widows: 50px;
 
 	}
-	.img-thumbnail {
+	.skills .img-thumbnail {
 		margin: 10px;
 
 	}
@@ -299,10 +321,11 @@ nav a {
 		font-size: 30px;
 
 	}
-	.slides p {
+	#portfolio .container .col-sm-6 p {
 		font-size: 15px;
-
+		text-align: center;
 	}
+
 	.slides .row {
 		border-bottom-style: none;
 		padding-top: 10px;
@@ -322,13 +345,6 @@ nav a {
 		margin-top: 0;
 	}
 
-	.slides .row .col-sm-6 ul {
-
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-
-	}
 
 	#contact .container {
 		text-align: center;
@@ -359,8 +375,12 @@ nav a {
 
 }
 
+
 @media screen and (max-width:533px) {
 
+	.represent {
+		text-align: justify;
+	}
 	.skills {
 		margin: 0;
 
@@ -371,9 +391,14 @@ nav a {
 
 	}
 
-	.img-thumbnail {
+	.skills .img-thumbnail {
 		margin: 0;
 		padding: 0;
+	}
+	.slides img {
+		height: 250px;
+		widows: 300px;
+
 	}
 
 }
@@ -397,6 +422,11 @@ nav a {
 	}
 	.represent p {
 		font-size: 20px;
+	}
+	.slides img {
+		height: 200px;
+		widows: 250px;
+
 	}
 
 }
